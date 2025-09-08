@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+.inknut-antiqua-regular {
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+nav{
+    background-color: #A5FF8E;
+    height: 15vb;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: fixed;
+
+    ul{
+        font-size: 1.5rem;
+        margin-left:5vw;
+        width: 100vw;
+        height: 10vb;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+
+        li{
+            display: inline-block;
+            border-right: black 5px solid;
+            width: 10vw;
+            margin-right: 2vw;
+            height: 6vb;
+            line-height: 2.5;
+            font-weight: bold;
+        }
+        li:last-child{
+            border-right: 0px;
+        }
+    }
+
+    span{
+        display: inline-block;
+        background-color: black;
+        width: 95vw;
+        height: 4px;
+    }
+}

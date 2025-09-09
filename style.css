@@ -44,27 +44,32 @@ nav{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
     position: fixed;
     z-index: 99;
 
     ul{
         font-size: 1.5rem;
         margin-left:5vw;
-        width: 100vw;
+        width: 70vw;
         height: 10vb;
         display: flex;
-        align-content: center;
-        flex-wrap: wrap;
+        align-items: center;
+        flex-wrap: nowrap;
 
         li{
             display: inline-block;
-            border-right: black 5px solid;
-            width: 10vw;
-            margin-right: 2vw;
+            margin: 0 1vw;
             height: 6vb;
+            text-align: center;
             line-height: 2.5;
             font-weight: bold;
+        }
+        .liBar{
+            background-color: black;
+            width: 5px;
+        }
+        li:first-child{
+            border-left: 0px;
         }
         li:last-child{
             border-right: 0px;
@@ -76,6 +81,7 @@ nav{
         background-color: black;
         width: 95vw;
         height: 4px;
+        margin-left: 2.5vw;
     }
 }
 
@@ -218,6 +224,7 @@ nav{
             padding: 4% 5%;
             font-family: "Jersey 20", sans-serif;
             font-size: 2.5rem;
+            font-weight: 500;
             position: relative;
             margin-bottom: 5vb;
             text-align: center;
@@ -236,17 +243,17 @@ nav{
         width: 80vw;
         background-color: #167000;
         border-radius: 40px;
-        padding: 5%;
+        padding: 3%;
 
         span{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             width: 100%;
             height: 100%;
 
             div{
-                width: 400px;
-                height: 400px;
+                width: 350px;
+                height: 350px;
                 background-color: #A5FF8E;
                 border-radius: 25px;
                 display: flex;
@@ -254,15 +261,15 @@ nav{
                 align-items: center;
 
                 img{
-                    width: 250px;
-                    height: 250px;
+                    width: 150px;
+                    height: 150px;
                 }
             }
         }
     }
     a div{
         width: 80vw;
-        height: 35vb;
+        height: 30vb;
         margin-top: 10vb;
         background-color: #33FF00;
         border-radius: 40px;
@@ -273,13 +280,13 @@ nav{
 
         h1{
             font-family: "Kode Mono", monospace;
-            font-size: 6rem;
+            font-size: 5rem;
             font-weight: 500;
             text-align: center;
             width: 80%;
         }
         img{
-            height: 25vb;
+            height: 20vb;
         }
     }
 }

@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     overflow-x: hidden;
@@ -23,6 +26,12 @@ body{
     font-weight: 400;
     font-style: normal;
 }
+.jersey-20-regular {
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 a{
     text-decoration: none;
     color: black;
@@ -37,6 +46,7 @@ nav{
     flex-wrap: wrap;
     justify-content: center;
     position: fixed;
+    z-index: 99;
 
     ul{
         font-size: 1.5rem;
@@ -156,18 +166,120 @@ nav{
         background-color: #A5FF8E;
         border-radius: 40px;
         padding: 5%;
-        display: flex;
-        justify-content: center;
+        padding-bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 1fr;
 
-        >h1{
+        div:first-child{
+            justify-self: left;
+        }
+        div:last-child{
+            justify-self: right;
+        }
+        span{
+            padding-top: 110px;
+        }
+        #sp1{
+            text-align: left;
+
+            h1::before{
+                content: "";
+                background-color: #167000;
+                display: inline-block;
+                width: 180px;
+                height: 15px;
+                position: absolute;
+                bottom: 50%;
+                transform: translateY(7.5px);
+                left: -180px;
+            }
+        }
+        #sp2{
+            text-align: right;
+
+            h1::after{
+                content: "";
+                background-color: #167000;
+                display: inline-block;
+                width: 180px;
+                height: 15px;
+                position: absolute;
+                bottom: 50%;
+                transform: translateY(7.5px);
+                right: -180px;
+            }
+        }
+        
+        h1{
             background-color: white;
             border-radius: 40px;
             display: inline-block;
             border: #167000 10px solid;
-            height: 10vb;
-            padding: 0 2%;
-            position: absolute;
-            left: 10%;
+            padding: 4% 5%;
+            font-family: "Jersey 20", sans-serif;
+            font-size: 2.5rem;
+            position: relative;
+            margin-bottom: 5vb;
+            text-align: center;
+        }
+    }
+
+}
+
+#sec-projetos{
+    padding-top: 30vb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    >div{
+        width: 80vw;
+        background-color: #167000;
+        border-radius: 40px;
+        padding: 5%;
+
+        span{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+
+            div{
+                width: 400px;
+                height: 400px;
+                background-color: #A5FF8E;
+                border-radius: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+        }
+    }
+    a div{
+        width: 80vw;
+        height: 35vb;
+        margin-top: 10vb;
+        background-color: #33FF00;
+        border-radius: 40px;
+        padding: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+
+        h1{
+            font-family: "Kode Mono", monospace;
+            font-size: 6rem;
+            font-weight: 500;
+            text-align: center;
+            width: 80%;
+        }
+        img{
+            height: 25vb;
         }
     }
 }

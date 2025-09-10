@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    transition: 1s all;
 }
 html{
     scroll-behavior: smooth;
@@ -175,6 +176,7 @@ nav{
         padding-bottom: 0;
         display: grid;
         grid-template-columns: 1fr 2fr 2fr 1fr;
+        position: relative;
 
         div:first-child{
             justify-self: left;
@@ -187,32 +189,46 @@ nav{
         }
         #sp1{
             text-align: left;
+            position: relative;
 
-            h1::before{
-                content: "";
+            span{
                 background-color: #167000;
                 display: inline-block;
                 width: 180px;
                 height: 15px;
                 position: absolute;
-                bottom: 50%;
+                top: 22%;
                 transform: translateY(7.5px);
                 left: -180px;
+                padding: 0;
+            }
+            span:nth-child(2){
+                top: 43%;
+            }
+            span:nth-child(3){
+                top: 67.5%;
             }
         }
         #sp2{
             text-align: right;
+            position: relative;
 
-            h1::after{
-                content: "";
+            span{
                 background-color: #167000;
                 display: inline-block;
                 width: 180px;
                 height: 15px;
                 position: absolute;
-                bottom: 50%;
+                top: 22%;
                 transform: translateY(7.5px);
                 right: -180px;
+                padding: 0;
+            }
+            span:nth-child(2){
+                top: 43%;
+            }
+            span:nth-child(3){
+                top: 65%;
             }
         }
         
@@ -228,6 +244,10 @@ nav{
             position: relative;
             margin-bottom: 5vb;
             text-align: center;
+
+            >p{
+                display: none;
+            }
         }
     }
 
@@ -287,6 +307,119 @@ nav{
         }
         img{
             height: 20vb;
+        }
+    }
+    a:hover{
+        filter: brightness(80%);
+    }
+
+
+}
+
+#sec-contact{
+    padding-top: 30vb;
+    display: flex;
+    justify-content: center;
+
+    >div{
+        width: 80vw;
+        background-color: #A5FF8E;
+        border-radius: 40px;
+        padding: 5%;
+
+        h1{
+            font-family: "Kode Mono", monospace;
+            font-size: 5rem;
+        }
+        >div{
+            width: 100%;
+            margin-top: 5vb;
+            background-color: #167000;
+            height: 75vb;
+            border-radius: 40px;
+            padding: 5%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            input{
+                background-color: #A5FF8E;
+                border-radius: 40px;
+                border: 0;
+                font-size: 2rem;
+                width: 47%;
+                height: 10vb;
+                padding: 3%;
+                font-family: "Jersey 20", sans-serif;
+            }
+            textarea{
+                background-color: #A5FF8E;
+                border-radius: 40px;
+                border: 0;
+                font-size: 2rem;
+                width: 100%;
+                height: 40vb;
+                margin-top: 5vb;
+                padding: 3%;
+                font-family: "Jersey 20", sans-serif;
+            }
+            button{
+                background-color: #33FF00;
+                width: 30%;
+                height: 8vb;
+                margin-top: 3vb;
+                border-radius: 40px;
+                border: 0;
+                font-family: "Jersey 20", sans-serif;
+                font-size: 3rem;
+                margin: 2% 35%;
+                cursor: pointer;
+            }
+            button:hover{
+                filter: brightness(80%);
+            }
+
+        }
+    }
+}
+#sec-rodape{
+    padding-top: 30vb;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+    >div{
+        background-color: black;
+        width: 100vw;
+        height: 15vb;
+        font-family: "Jersey 20", sans-serif;
+        color: white;
+        font-weight: 400;
+        align-items: center;
+        display: flex;
+        
+        >span{
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            display: flex;
+            width: 100%;
+
+            >span{
+                width: 15px;
+                height: 7vb;
+                background-color: white;
+                margin: 0 4vw;
+            }
+            h1{
+                font-weight: 400;
+                font-size: 3rem;
+            }
+            h2{
+                font-weight: 400;
+                font-size: 2rem;
+            }
         }
     }
 }

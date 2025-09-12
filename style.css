@@ -189,7 +189,6 @@ nav{
         }
         #sp1{
             text-align: left;
-            position: relative;
 
             span{
                 background-color: #167000;
@@ -197,16 +196,15 @@ nav{
                 width: 180px;
                 height: 15px;
                 position: absolute;
-                top: 22%;
-                transform: translateY(7.5px);
-                left: -180px;
+                transform: translateX(-100%);
+                top: 32%;
                 padding: 0;
             }
             span:nth-child(2){
-                top: 43%;
+                top: 51%;
             }
             span:nth-child(3){
-                top: 67.5%;
+                top: 72%;
             }
         }
         #sp2{
@@ -244,10 +242,19 @@ nav{
             position: relative;
             margin-bottom: 5vb;
             text-align: center;
+            transition: all 1s;
 
             >p{
                 display: none;
             }
+        }
+
+        h1:hover{
+            position: absolute;
+            z-index: 5;
+            height: 50vb;
+            width: 50vw;
+            
         }
     }
 

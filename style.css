@@ -179,7 +179,7 @@ nav{
         position: relative;
 
         #fncObj{
-            opacity: 0;
+            opacity: 1;
             position: absolute;
             height: 1vb;
             width: 1vw;

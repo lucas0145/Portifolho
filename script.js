@@ -1,36 +1,35 @@
+let obj = document.getElementById("fncObj")
 
 function skillFnc(a) {
     
-    let obj = document.getElementById("fncObj")
+        obj.style.opacity = "1"   
+        obj.style.padding = "4%, 5%"
+        obj.style.width = "70vw"
 
- 
-    obj.classList.toggle("sizeTgg")
+
+        setTimeout(() => {
+          obj.style.height = "70vb" 
+        }, "1000");
+        
+  
 
 }
 
 function skillOut(obj){
 
-  
-    obj.classList.toggle("sizeTgg")
+        obj.style.width = "0px"
+        obj.style.padding = "0%"
 
+        setTimeout(() => {
+
+            obj.style.height = "0px"
+
+            setTimeout(() => {
+            obj.style.opacity = "0"
+            }, "1000");    
+        }, "1000");    
 
 }
 
-// let obj = document.getElementById("aa")
 
-// obj.addEventListener("mouseover", function(){
-  
-//   obj.style.width = "100vw"
-//   setTimeout(() => {
-//     obj.style.height = "100vw"
-//   }, "1000");
 
-// });
-
-// obj.addEventListener("mouseout", function(){
-//   obj.style.width = "20vw"
-
-//   setTimeout(() => {
-//    obj.style.height = "20vw"
-//   }, "1000");
-// });

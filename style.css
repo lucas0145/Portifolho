@@ -179,15 +179,26 @@ nav{
         position: relative;
 
         #fncObj{
-            opacity: 1;
+            opacity: 0;
             position: absolute;
-            height: 1vb;
-            width: 1vw;
+            height: 0px;
+            width: 0px;
             z-index: 10;
             left: 50%;
             top: 50%;
+            padding: 0%;
             transform: translate(-50%, -50%);
-            transition: width 1s, height 1s, opacity 0s;             
+            transition: width 1s, height 1s, opacity 0s;      
+            overflow: hidden;    
+            
+            p{
+                display: block;
+                font-size: 3rem;
+
+                p{
+                    padding-top: 7%;
+                }
+            }
         }
         
         .sizeTgg{

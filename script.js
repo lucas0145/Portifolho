@@ -3,15 +3,14 @@ let obj = document.getElementById("fncObj")
 function skillFnc(a) {
     
         obj.style.opacity = "1"   
-        obj.style.padding = "4%, 5%"
+        obj.style.padding = "4% 5%"
         obj.style.width = "70vw"
-
+        obj.firstElementChild.innerHTML = a.innerHTML
 
         setTimeout(() => {
+
           obj.style.height = "70vb" 
         }, "1000");
-        
-  
 
 }
 

@@ -1,32 +1,33 @@
 let obj = document.getElementById("fncObj")
 
+
 function skillFnc(a) {
-    
-        obj.style.opacity = "1"   
-        obj.style.padding = "4% 5%"
-        obj.style.width = "70vw"
-        obj.firstElementChild.innerHTML = a.innerHTML
+        
+                obj.style.border = "#167000 10px solid"
+                obj.style.width = "70vw"
+                obj.firstElementChild.innerHTML = a.innerHTML
 
-        setTimeout(() => {
+                setTimeout(() => {
 
-          obj.style.height = "70vb" 
-        }, "1000");
+                obj.style.height = "70vb" 
+                obj.style.border = "#167000 10px solid"
 
+                }, "1001");     
 }
 
 function skillOut(obj){
 
-        obj.style.width = "0px"
-        obj.style.padding = "0%"
+        obj.style.width = "0vw"
 
         setTimeout(() => {
 
-            obj.style.height = "0px"
+            obj.style.height = "0vb"
 
             setTimeout(() => {
-            obj.style.opacity = "0"
+                obj.style.border = "none"
             }, "1000");    
-        }, "1000");    
+
+        }, "1000");      
 
 }
 

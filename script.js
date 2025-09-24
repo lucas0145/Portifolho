@@ -3,31 +3,35 @@ let obj = document.getElementById("fncObj")
 
 function skillFnc(a) {
         
-                obj.style.border = "#167000 10px solid"
-                obj.style.width = "70vw"
-                obj.firstElementChild.innerHTML = a.innerHTML
+        obj.style.border = "#167000 10px solid"
+        obj.style.width = "70vw"
+        obj.firstElementChild.innerHTML = a.innerHTML
 
-                setTimeout(() => {
+        setTimeout(() => {
 
-                obj.style.height = "70vb" 
-                obj.style.border = "#167000 10px solid"
+        obj.style.height = "70vb" 
+        obj.style.border = "#167000 10px solid"
 
-                }, "1001");     
+        }, "1001");     
 }
 
 function skillOut(obj){
 
-        obj.style.width = "0vw"
+    obj.style.width = "0vw"
+
+    setTimeout(() => {
+
+        obj.style.height = "0vb"
 
         setTimeout(() => {
-
-            obj.style.height = "0vb"
-
-            setTimeout(() => {
+            
+            if (obj.style.width == "0vw") {
                 obj.style.border = "none"
-            }, "1000");    
+            }
+            
+        }, "1000");    
 
-        }, "1000");      
+    }, "1000");      
 
 }
 

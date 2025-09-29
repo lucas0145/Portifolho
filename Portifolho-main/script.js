@@ -64,10 +64,3 @@ function EnviarBtnFnc (){
 
     document.getElementById('contact-form').reset()
 }
-
-function dropMenuFnc() {
-    let a = document.getElementById("lstMenu")
-
-    a.classList.toggle("menuClass")
-    console.log("aaaaa")
-}

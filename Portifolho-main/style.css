@@ -48,14 +48,6 @@ nav{
     position: fixed;
     z-index: 99;
 
-    img{
-        width: 8vw;
-        height: 8vw;
-        display: none;
-        margin-left: 5vw;
-        margin-top: 2vw;
-    }
-
     ul{
         font-size: 1.5rem;
         margin-left:5vw;
@@ -111,16 +103,14 @@ nav{
             border-right: 0px;
         }
     }
-}
-nav::after{
-    content: "";
-    width: 95%;
-    height: 4px;
-    margin: 0 2.5%;
-    margin-bottom: 0.1vb;
-    display: block;
-    justify-self: center;
-    background-color: black;
+
+    span{
+        display: inline-block;
+        background-color: black;
+        width: 95vw;
+        height: 4px;
+        margin-left: 2.5vw;
+    }
 }
 
 #sec-inicio{
@@ -137,11 +127,6 @@ nav::after{
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-content: center;
-
-        img{
-            width: 20vw;
-            height: 20vw;
-        }
 
         span{
             font-family: "Kode Mono", monospace;

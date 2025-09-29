@@ -60,4 +60,7 @@ function formataTel (a) {
     }
 }
 
+function EnviarBtnFnc (){
 
+    document.getElementById('contact-form').reset()
+}

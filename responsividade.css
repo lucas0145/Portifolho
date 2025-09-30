@@ -60,7 +60,7 @@
                 font-size: 2rem;
             }
 
-            >span{
+            span{
 
                 grid-template-rows: 55vw 1fr;
                 grid-template-columns: 1fr;
@@ -76,6 +76,7 @@
                     height: 55vb;
                 }
             }
+            
         }
     }
 
@@ -95,6 +96,90 @@
             #sp2{
                 text-align: left;
             }
+            span{
+
+                h1{
+                font-size: 2.1rem !important;
+                }
+                span{
+                    transform: translateX(-95%) !important;
+                    width: 205px !important;
+                }
+                
+            }
+            #sp1{
+
+                span:first-child{
+                    top: 15.5% !important;
+                }
+                span:nth-child(2){
+                    top: 28.5% !important;
+                }
+                span:nth-child(3){
+                    top:44.5% !important;
+                }
+            }
+            #sp2{
+                
+                span{
+                    left: 0;
+                }
+
+                span:first-child{
+                    top: 30.5% !important;
+                }
+                span:nth-child(2){
+                    top: 56% !important;
+                }
+                span:nth-child(3){
+                    top: 82% !important;
+                }
+            }
         }
     }
+
+    #sec-projetos{
+
+        >div{
+            height: 1350px;
+
+            >span{
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                height: 1350px;
+                margin-top: 20px;
+
+                div{
+                    right: auto !important;
+                    left: auto !important;
+                    text-align: justify;
+                    align-items: flex-start;
+                    flex-wrap: wrap;
+                    font-size: 1rem !important;
+
+                }
+                div:hover{
+                    height: 1280px;
+                    width: 350px;
+
+                }
+                #proj-1{
+                    grid-row: 1/1;
+                }
+                #proj-2{
+                    grid-row: 2/2;
+                }
+                #proj-2:hover{
+                    top: -100%;
+                }
+                #proj-3{
+                    grid-row: 3/3;
+                }
+                #proj-3:hover{
+                    top: -200%;
+                }
+            }
+        }
+    }
+    
 }

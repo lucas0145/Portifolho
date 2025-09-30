@@ -180,16 +180,18 @@ nav::after{
         }
         span{
             width: 70vw;
-            display: flex;
+            display: grid;
             justify-content: space-between;
             margin-top: 5vb;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
 
             img{
                 background-color: white;
                 border-radius: 25px;
                 display: inline-block;
                 width: 20vw;
-                height: 35vb;
+                height: 20vw;
             }
             >div{
                 background-color: #A5FF8E;

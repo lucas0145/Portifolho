@@ -69,5 +69,10 @@ function dropMenuFnc() {
     let a = document.getElementById("lstMenu")
 
     a.classList.toggle("menuClass")
-    console.log("aaaaa")
 }
+
+window.addEventListener('scroll', function() {
+    let lstMenu = document.getElementById("lstMenu")
+
+    lstMenu.classList.remove('menuClass')
+});

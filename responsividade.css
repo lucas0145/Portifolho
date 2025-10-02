@@ -159,9 +159,8 @@
 
                 }
                 div:hover{
-                    height: 1280px;
                     width: 350px;
-
+                    width: 350px;
                 }
                 #proj-1{
                     grid-row: 1/1;
@@ -169,17 +168,66 @@
                 #proj-2{
                     grid-row: 2/2;
                 }
-                #proj-2:hover{
-                    top: -100%;
-                }
                 #proj-3{
                     grid-row: 3/3;
                 }
-                #proj-3:hover{
-                    top: -200%;
+            }
+        }
+
+        >a{
+            div{
+                justify-content: center;
+                h1{
+                    display: none;
                 }
             }
         }
     }
     
+    #sec-contact{
+        >div{
+            width: 100vw;
+            h1{
+                font-size: 3rem;
+            }
+            form{
+                font-size: 2rem !important;
+                input{
+                    font-size: 1.5rem !important;
+                }
+                textarea{
+                    font-size: 1.5rem !important;
+                    padding: 5% !important;
+                }
+                input[type="button"]{
+                    font-size: 2rem !important;
+                    width: 50% !important;
+                    margin: 2% 30% !important;
+                }
+            }
+        }
+    }
+
+    #sec-rodape{
+        >div{
+            >span{
+                h1{
+                    font-size: 1.5rem !important;
+                }
+                h2{
+                    font-size: 1.5rem !important;
+                }
+                span{
+                    width: 5px;
+                    height: 10px;
+                    margin: 2vw 1vw;
+                }
+                span:nth-child(2){
+                    width: 0;
+                }
+            }
+        }
+        
+    }
 }
+

@@ -500,7 +500,7 @@ nav::after{
                 transition: outline 0s;
                 outline: black 3px solid;
             }
-            button{
+            input[type="button"]{
                 background-color: #33FF00;
                 width: 30%;
                 height: 8vb;
@@ -511,8 +511,9 @@ nav::after{
                 font-size: 3rem;
                 margin: 2% 35%;
                 cursor: pointer;
+                padding: 0;
             }
-            button:hover{
+            input[type="button"]:hover{
                 filter: brightness(80%);
             }
 

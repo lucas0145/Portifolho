@@ -156,11 +156,15 @@
                     align-items: flex-start;
                     flex-wrap: wrap;
                     font-size: 1rem !important;
+                    height: auto;
+                    width: 90%;
+                    height: 350px;
+                    justify-content: center;
 
                 }
                 div:hover{
-                    width: 350px;
-                    width: 350px;
+                    width: 90%;
+                    height: 350px;
                 }
                 #proj-1{
                     grid-row: 1/1;

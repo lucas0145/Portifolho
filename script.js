@@ -1,8 +1,24 @@
 let obj = document.getElementById("fncObj")
-
+const respons = window.matchMedia("(max-width: 550px)")
 
 function skillFnc(a) {
         
+    if(respons.matches){
+
+        obj.style.border = "#167000 10px solid"
+        obj.style.width = "90vw"
+        obj.style.fontSize = "1.5rem"
+        obj.firstElementChild.innerHTML = a.innerHTML
+
+        setTimeout(() => {
+
+        obj.style.height = "90vb" 
+        obj.style.border = "#167000 10px solid"
+
+        }, "1001");  
+
+    }else{
+
         obj.style.border = "#167000 10px solid"
         obj.style.width = "70vw"
         obj.firstElementChild.innerHTML = a.innerHTML
@@ -12,7 +28,9 @@ function skillFnc(a) {
         obj.style.height = "70vb" 
         obj.style.border = "#167000 10px solid"
 
-        }, "1001");     
+        }, "1001");  
+    }
+   
 }
 
 function skillOut(obj){
@@ -31,7 +49,8 @@ function skillOut(obj){
             
         }, "1000");    
 
-    }, "1000");      
+    }, "1000");     
+    
 
 }
 

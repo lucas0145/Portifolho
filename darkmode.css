@@ -1,0 +1,158 @@
+.darkmodeON{
+    background-color: rgb(41, 41, 41);
+
+    nav{
+        background-color: #167000;
+        
+        ul{
+            li{
+                a{
+                    color: white !important;
+                }
+                a:after{
+                    background-color: white !important;
+                }
+            }
+            .liBar{
+                background-color: white !important;
+            }
+        }
+
+        img{
+            filter: invert(100%)
+        }
+
+    }
+    nav:after{
+        background-color: white !important;
+    }
+
+    #sec-inicio{
+        
+        >div{
+            background-color: #167000;
+            color: white !important;
+
+            >div{
+                span{
+                    background-color: #000000 !important;
+                }
+            }
+        }
+
+    }
+
+#sec-about{
+
+    >div{
+        background-color: #167000;
+
+        h1{
+            color: white;
+            background-color: black;
+        }
+        span{
+
+            img{
+                background-color: white;
+            }
+            >div{
+                background-color: #A5FF8E;
+                color: black;
+            }
+        }
+    }
+}
+
+#sec-skill{
+
+    >div{
+        background-color: #167000;
+
+        #fncObj{
+            color: white;
+        }
+
+        #sp1{
+
+            span{
+                background-color: #A5FF8E;
+
+            }
+        }
+        #sp2{
+            span{
+                background-color: #A5FF8E;
+            }
+        }
+        
+        h1{
+            background-color: rgb(126, 126, 126);
+            border: #A5FF8E 10px solid;
+            color: white;
+        }
+
+        svg{
+            circle{
+                fill: rgb(126, 126, 126);
+                stroke: #A5FF8E;
+            }
+            rect{
+                fill: #A5FF8E;
+                stroke: #A5FF8E;
+            }
+        }
+    }
+
+}
+#sec-projetos{
+
+    >div{
+        background-color: #167000;
+
+        span{
+
+            div{
+                background-color: #A5FF8E;
+                color: black;
+            }
+        }
+    }
+}
+
+#sec-contact{
+    padding-top: 30vb;
+    display: flex;
+    justify-content: center;
+
+    >div{
+        background-color: #167000;
+        color: white;
+
+        #contact-form{
+            background-color: #A5FF8E;
+            input{
+                background-color: #167000;
+                color: white;
+
+                placeholder{
+                    color: white;
+                }
+            }
+            input:focus{
+                border: black 2px solid;
+            }
+            textarea{
+                background-color: #167000;
+            }
+            textarea:focus{
+                outline: black 3px solid;
+            }
+            input[type="button"]{
+                background-color: #27c500;
+            }
+        }
+    }
+}
+
+}

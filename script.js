@@ -1,11 +1,18 @@
 let obj = document.getElementById("fncObj")
 const respons = window.matchMedia("(max-width: 550px)")
+let dmCtrl = 0
 
 function skillFnc(a) {
+    
+    if(dmCtrl % 2 == 0){
+        obj.style.border = "#167000 10px solid"
+    }else{
+        obj.style.border = "#A5FF8E 10px solid"
         
+    }
+
     if(respons.matches){
 
-        obj.style.border = "#167000 10px solid"
         obj.style.width = "90vw"
         obj.style.fontSize = "1.5rem"
         obj.firstElementChild.innerHTML = a.innerHTML
@@ -13,20 +20,17 @@ function skillFnc(a) {
         setTimeout(() => {
 
         obj.style.height = "90vb" 
-        obj.style.border = "#167000 10px solid"
 
         }, "1001");  
 
     }else{
 
-        obj.style.border = "#167000 10px solid"
         obj.style.width = "70vw"
         obj.firstElementChild.innerHTML = a.innerHTML
 
         setTimeout(() => {
 
         obj.style.height = "70vb" 
-        obj.style.border = "#167000 10px solid"
 
         }, "1001");  
     }
@@ -95,3 +99,24 @@ window.addEventListener('scroll', function() {
 
     lstMenu.classList.remove('menuClass')
 });
+
+function darkmodeFnc(sw){
+    
+    sw.style.transform = "rotateY(90deg)";
+
+    setTimeout(() => {
+
+        if(dmCtrl % 2 == 0){
+            sw.src = "sun.png"
+        }else{
+            sw.src = "moon.png"
+        }
+        sw.style.transform = "rotateY(0deg)";
+
+    }, "550");
+    
+    document.body.classList.toggle("darkmodeON")    
+
+    dmCtrl += 1
+
+}

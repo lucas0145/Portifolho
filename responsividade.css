@@ -2,9 +2,12 @@
     nav{
         width: 100vw;
         position: fixed;
+        grid-template-columns: 1fr 16vw;
         
         img{
             display: block;
+            width: 8vw !important;
+            height: 8vw !important;
         }
 
         ul{

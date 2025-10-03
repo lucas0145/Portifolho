@@ -120,7 +120,7 @@ nav{
         margin: 0;
         justify-self: left;
         transition: 1s all;
-        
+        cursor: pointer;
     }
 }
 nav::after{
@@ -468,6 +468,9 @@ nav::after{
         h1{
             font-family: "Kode Mono", monospace;
             font-size: 5rem;
+            background-color: black;
+            color: white;
+            padding-left: 2%;
         }
         #contact-form{
             width: 100%;

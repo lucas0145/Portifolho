@@ -333,6 +333,7 @@ nav::after{
 
             >p{
                 display: none;
+                text-align: justify;
             }
         }
 
@@ -574,4 +575,5 @@ nav::after{
             }
         }
     }
+
 }

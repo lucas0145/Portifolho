@@ -7,8 +7,7 @@ function skillFnc(a) {
     if(dmCtrl % 2 == 0){
         obj.style.border = "#167000 10px solid"
     }else{
-        obj.style.border = "#A5FF8E 10px solid"
-        
+        obj.style.border = "#072200 10px solid"
     }
 
     if(respons.matches){

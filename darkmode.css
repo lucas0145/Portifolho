@@ -70,36 +70,33 @@
         background-color: #167000;
 
         #fncObj{
-            color: white;
+            /* color: white; */
         }
 
         #sp1{
 
             span{
-                background-color: #A5FF8E;
+                background-color: #072200;
 
             }
         }
         #sp2{
             span{
-                background-color: #A5FF8E;
+                background-color: #072200;
             }
         }
         
         h1{
-            background-color: rgb(126, 126, 126);
-            border: #A5FF8E 10px solid;
-            color: white;
+            border: #072200 10px solid;
         }
 
         svg{
             circle{
-                fill: rgb(126, 126, 126);
-                stroke: #A5FF8E;
+                stroke: #072200;
             }
             rect{
-                fill: #A5FF8E;
-                stroke: #A5FF8E;
+                fill: #072200;
+                stroke: #072200;
             }
         }
     }
@@ -132,7 +129,7 @@
         #contact-form{
             background-color: #A5FF8E;
             input{
-                background-color: #167000;
+                background-color: white;
                 color: white;
 
                 placeholder{
@@ -143,13 +140,14 @@
                 border: black 2px solid;
             }
             textarea{
-                background-color: #167000;
+                background-color: white;
             }
             textarea:focus{
                 outline: black 3px solid;
             }
             input[type="button"]{
                 background-color: #27c500;
+                color: black;
             }
         }
     }

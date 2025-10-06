@@ -90,11 +90,6 @@
             width: 100vw;
             grid-template-columns: 1fr 1fr;
 
-            #fncObj{
-                >p{
-                    font-size: 2rem !important;
-                }
-            }
             >div:nth-child(2){
                 grid-row: 1 /3 ;
             }
@@ -145,12 +140,10 @@
             }
 
             h1{
-                >p{
+                p{
                     font-size: 1rem;
                 }
             }
-
-
         }
     }
 

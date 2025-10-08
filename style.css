@@ -4,6 +4,22 @@
     padding: 0;
     transition: 1s all;
 }
+:root{
+    --priCor: #A5FF8E;
+    --secCor: #167000;
+    --accCor: #33FF00;
+    --textCor: black;
+}
+.darkmodeON{
+    --priCor: #167000;
+    --secCor: #A5FF8E;
+    --textCor: white;
+    background-color: #0d050f;
+
+    #darkmodeSW{
+        filter: invert(100%);
+    }
+}
 html{
     scroll-behavior: smooth;
 }
@@ -35,11 +51,11 @@ body{
   
 a{
     text-decoration: none;
-    color: black;
+    color: var(--textCor);
 }
 
 nav{
-    background-color: #A5FF8E;
+    background-color: var(--priCor);
     height: 15vb;
     width: 100vw;
     display: grid;
@@ -84,7 +100,7 @@ nav{
         a:after{
             content: "";
             display: block;
-            background-color: black;
+            background-color: var(--textCor);
             position: absolute;
             left: 0;
             bottom: 16%;
@@ -102,7 +118,7 @@ nav{
         }
 
         .liBar{
-            background-color: black;
+            background-color: var(--textCor);
             width: 5px;
         }
         li:first-child{
@@ -131,7 +147,7 @@ nav::after{
     margin-bottom: 0.1vb;
     display: block;
     justify-self: center;
-    background-color: black;
+    background-color: var(--textCor);
     grid-column: 1/3;
 }
 
@@ -142,7 +158,7 @@ nav::after{
 
     >div{
         width: 80vw;
-        background-color: #A5FF8E;
+        background-color: var(--priCor);
         border-radius: 40px;
         height: 70vb;
         padding: 5%;
@@ -158,13 +174,14 @@ nav::after{
         span{
             font-family: "Kode Mono", monospace;
             font-size: 4rem;
-            background-color: #33FF00;
+            background-color: var(--accCor);
             padding: 1% 3%;
         }
         h2{
             font-family: "Iceland", sans-serif;
             font-size: 3rem;
             margin: 4% 0;
+            color: var(--textCor);
         }
     }
 }
@@ -176,7 +193,7 @@ nav::after{
 
     >div{
         width: 80vw;
-        background-color: #A5FF8E;
+        background-color: var(--priCor);
         border-radius: 40px;
         padding: 5%;
 
@@ -206,14 +223,15 @@ nav::after{
                 height: 20vw;
             }
             >div{
-                background-color: #167000;
-                color: white;
+                background-color: var(--accCor);
+                color: black;
                 width: 40vw;
                 height: max-content;
                 display: inline-block;
                 font-family: "Kode Mono", monospace;
                 font-size: 2rem;
                 padding: 3%;
+                border: 2px dotted var(--secCor);
             }
         }
     }
@@ -224,10 +242,19 @@ nav::after{
     display: flex;
     justify-content: center;
 
+
+    svg{
+        circle{
+            stroke: var(--secCor) !important;
+        }
+        rect{
+            fill: var(--secCor) !important;
+        }
+    }
     >div{
         width: 80vw;
         height: 80vb;
-        background-color: #A5FF8E;
+        background-color: var(--priCor);
         border-radius: 40px;
         padding: 5%;
         padding-bottom: 0;
@@ -244,8 +271,7 @@ nav::after{
             top: 50%;
             padding: 0%;
             transform: translate(-50%, -50%);
-            transition: width 1s, height 1s, opacity 0s, border 0s;
-            border: none;  
+            transition: width 1s, height 1s, opacity 0s, border 0s; 
             overflow: hidden;  
             display: flex;
             justify-content: center;
@@ -278,7 +304,7 @@ nav::after{
             text-align: left;
 
             span{
-                background-color: #167000;
+                background-color: var(--secCor);
                 display: inline-block;
                 width: 180px;
                 height: 15px;
@@ -299,7 +325,7 @@ nav::after{
             position: relative;
 
             span{
-                background-color: #167000;
+                background-color: var(--secCor);
                 display: inline-block;
                 width: 180px;
                 height: 15px;
@@ -321,7 +347,7 @@ nav::after{
             background-color: white;
             border-radius: 40px;
             display: inline-block;
-            border: #167000 10px solid;
+            border: var(--secCor) 10px solid;
             padding: 4% 5%;
             font-family: "Jersey 20", sans-serif;
             font-size: 2.5rem;
@@ -352,7 +378,7 @@ nav::after{
 
     >div{
         width: 80vw;
-        background-color: #A5FF8E;
+        background-color: var(--priCor);
         border-radius: 40px;
         padding: 3%;
 
@@ -369,8 +395,8 @@ nav::after{
             div{
                 width: 350px;
                 height: 350px;
-                background-color: #167000;
-                color: white;
+                background-color: var(--secCor);
+                color: var(--textCor);
                 border-radius: 25px;
                 display: flex;
                 align-items: center;
@@ -390,6 +416,7 @@ nav::after{
                     padding-bottom: 2%;
                     padding-right: 5%;
                     min-width: 700px;
+                    filter: invert(100%);
                 }
             }
 
@@ -429,7 +456,7 @@ nav::after{
         width: 80vw;
         height: 30vb;
         margin-top: 10vb;
-        background-color: #33FF00;
+        background-color: var(--accCor);
         border-radius: 40px;
         padding: 5%;
         display: flex;
@@ -442,6 +469,7 @@ nav::after{
             font-weight: 500;
             text-align: center;
             width: 80%;
+            color: black;
         }
         img{
             height: 20vb;
@@ -461,18 +489,19 @@ nav::after{
 
     >div{
         width: 80vw;
-        background-color: #A5FF8E;
+        background-color: var(--priCor);
         border-radius: 40px;
         padding: 5%;
 
         h1{
             font-family: "Kode Mono", monospace;
             font-size: 5rem;
+            color: var(--textCor);
         }
         #contact-form{
             width: 100%;
             margin-top: 5vb;
-            background-color: #167000;
+            background-color: var(--secCor);
             height: 75vb;
             border-radius: 40px;
             padding: 4%;
@@ -481,7 +510,7 @@ nav::after{
             justify-content: space-between;
 
             input{
-                background-color: #A5FF8E;
+                background-color: var(--priCor);
                 border-radius: 40px;
                 border: 0;
                 font-size: 2rem;
@@ -500,7 +529,7 @@ nav::after{
                 border: black 2px solid;
             }
             textarea{
-                background-color: #A5FF8E;
+                background-color: var(--priCor);
                 border-radius: 40px;
                 border: 0;
                 font-size: 2rem;
@@ -516,7 +545,7 @@ nav::after{
                 outline: black 3px solid;
             }
             input[type="button"]{
-                background-color: #33FF00;
+                background-color: var(--accCor);
                 width: 30%;
                 height: 8vb;
                 margin-top: 3vb;

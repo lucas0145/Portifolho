@@ -276,6 +276,7 @@ nav::after{
             display: flex;
             justify-content: center;
             flex-wrap: wrap;  
+            border: none;
             
             >p{
                 display: block;
@@ -604,5 +605,5 @@ nav::after{
             }
         }
     }
-
 }
+

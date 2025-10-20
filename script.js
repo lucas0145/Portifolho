@@ -102,9 +102,9 @@ function darkmodeFnc(sw){
     setTimeout(() => {
 
         if(dmCtrl % 2 == 0){
-            sw.src = "sun.png"
+            sw.src = "Assets/sun.png"
         }else{
-            sw.src = "moon.png"
+            sw.src = "Assets/moon.png"
         }
         sw.style.transform = "rotateY(0deg)";
 
@@ -112,6 +112,6 @@ function darkmodeFnc(sw){
     
     document.body.classList.toggle("darkmodeON")    
 
-    dmCtrl += 1
+   dmCtrl += 1 
 
 }

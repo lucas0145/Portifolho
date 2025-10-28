@@ -2,6 +2,12 @@ let obj = document.getElementById("fncObj")
 const respons = window.matchMedia("(max-width: 550px)")
 let dmCtrl = 0
 
+window.addEventListener('scroll', function () {
+    let lstMenu = document.getElementById("lstMenu")
+
+    lstMenu.classList.remove('menuClass')
+});
+
 function skillFnc(a) {
 
     obj.style.border = "10px solid var(--secCor)"
@@ -86,7 +92,7 @@ function openModal(modalId) {
     localStorage.setItem("msgTxt", document.getElementById("msgTxt").value)
 
     if (localStorage.getItem("msgNome") != '' && localStorage.getItem("msgTel") != '' && localStorage.getItem("msgEmail") != '' && localStorage.getItem("msgTxt") != '') {
-        
+
         setTimeout(() => {
 
             let modal = document.getElementById(modalId)
@@ -97,7 +103,7 @@ function openModal(modalId) {
             document.getElementById("getTel").innerHTML = "Tel: " + localStorage.getItem("msgTel")
             document.getElementById("getTxt").innerHTML = "Mensagem: " + localStorage.getItem("msgTxt")
         }, 20)
-    }   
+    }
 
 
 }
@@ -108,11 +114,6 @@ function dropMenuFnc() {
     a.classList.toggle("menuClass")
 }
 
-window.addEventListener('scroll', function () {
-    let lstMenu = document.getElementById("lstMenu")
-
-    lstMenu.classList.remove('menuClass')
-});
 
 function darkmodeFnc(sw) {
 

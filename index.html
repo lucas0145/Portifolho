@@ -6,7 +6,6 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsividade.css">
-    <link rel="stylesheet" href="darkmode.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +17,7 @@
 </head>
 <body class="inknut-antiqua-regular">
     <nav>
-        <img src="menu-aberto.png" alt="" onclick="dropMenuFnc()">
+        <img src="Assets/menu-aberto.png" alt="" onclick="dropMenuFnc()">
         <ul id="lstMenu">
             <li><a href="#sec-inicio">Inicio</a></li>
             <li class="liBar"></li>
@@ -147,12 +146,12 @@
     <section id="sec-contact">
         <div>
             <h1>Contate-Me</h1>
-            <form id="contact-form">
-                <input type="text" placeholder="Nome:">
-                <input type="text" placeholder="Email:">
-                <input type="tel" placeholder="Telefone:" oninput="formataTel(this)">
-                <textarea name="" id="" placeholder="Mensagem:"></textarea>
-                <input type="button" value="Enviar" onclick="EnviarBtnFnc()">
+            <form id="contact-form" action="#sec-contact">
+                <input type="text" placeholder="Nome:" id="msgNome" required>
+                <input type="text" placeholder="Email:" id="msgEmail" required>
+                <input type="tel" placeholder="Telefone:" oninput="formataTel(this)" id="msgTel" required>
+                <textarea placeholder="Mensagem:" id="msgTxt" required></textarea>
+                <input type="submit" value="Enviar" onclick="openModal('modal')">
             </form>
         </div>
     </section>
@@ -169,10 +168,15 @@
         </div>
     </section>
     
-    <dialog>
+    <dialog id="modal">
+        <h1>Mensagem: </h1>
         <div>
-            
+            <h1 id="getNome">De:</h1>
+            <h1 id="getEmail">Email:</h1>
+            <h2 id="getTel">Tel:</h2>
+            <p id="getTxt">Mensagem:</p>
         </div>
+        <h1>, enviada com sucesso!</h1>
     </dialog>
 
     <script src="script.js"></script>

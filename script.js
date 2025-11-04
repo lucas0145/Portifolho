@@ -8,6 +8,15 @@ window.addEventListener('scroll', function () {
     lstMenu.classList.remove('menuClass')
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+
+    if (localStorage.getItem("darkModeOn")) {
+        
+        document.body.classList.add("darkmodeON")
+        document.getElementById("darkmodeSW").src = "Assets/moon.png"
+    }
+})
+
 function skillFnc(a) {
 
     obj.style.border = "10px solid var(--secCor)"
@@ -102,7 +111,7 @@ function openModal(modalId) {
             document.getElementById("getEmail").innerHTML = "Email: " + localStorage.getItem("msgEmail")
             document.getElementById("getTel").innerHTML = "Tel: " + localStorage.getItem("msgTel")
             document.getElementById("getTxt").innerHTML = "Mensagem: " + localStorage.getItem("msgTxt")
-        }, 20)
+        }, 200)
     }
 
 
@@ -121,17 +130,16 @@ function darkmodeFnc(sw) {
 
     setTimeout(() => {
 
-        if (dmCtrl % 2 == 0) {
+        if (document.body.classList.contains("darkmodeON") == false) {
             sw.src = "Assets/sun.png"
+            localStorage.setItem("darkModeOn", false)
         } else {
             sw.src = "Assets/moon.png"
+            localStorage.setItem("darkModeOn", true)
         }
         sw.style.transform = "rotateY(0deg)";
 
     }, "550");
 
     document.body.classList.toggle("darkmodeON")
-
-    dmCtrl += 1
-
 }
